@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../Resource/register.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(9px);
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px 40px; /* Adjusted padding */
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px; /* Add bottom margin */
+}
+
+.input-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    flex-basis: calc(50% - 10px); /* 50% width with 10px gap between elements */
+    position: relative;
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+}
+
+.input-box input {
+    width: calc(100% - 30px); /* Adjusted width to accommodate icon */
+}
+
+.input-box input,
+.input-box select {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 12px; /* Even smaller font size */
+  color: #fff;
+  padding: 25px 30px; /* Even bigger padding */
+}
+
+.input-box input::placeholder,
+.input-box select::placeholder {
+  color: #fff;
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.input-box .select-style::after {
+  content: '\25BC'; /* Unicode character for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.input-box .select-style select {
+  appearance: none; /* Remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  color: #fff;
+  padding-right: 30px;
+}
+
+.input-box .select-style select option {
+  background-color: transparent;
+  color: #333; /* Option text color */
+  font-size: 14px; /* Option font size */
+  padding: 15px 20px; /* Option padding */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Option bottom border */
+}
+
+.input-box .select-style select option:last-child {
+  border-bottom: none; /* Remove bottom border for the last option */
+}
+
+.input-box .select-style select option:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Hover effect for options */
+}
+
+.hidden {
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+}
+
+.btn {
+  width: 100%;
+  height: 60px; /* Increased button height */
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 20px; /* Increased font size */
+  color: #333;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.login-link {
+  font-size: 18px; /* Increased font size */
+  text-align: center;
+  margin-top: 15px;
+}
+
+.login-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-link p a:hover {
+  text-decoration: underline;
+}
+
+.error-msg {
+  color: #ff4d4d; /* Red color for error messages */
+  font-size: 14px; /* Adjusted font size */
+  text-align: center;
+  margin-top: 10px; /* Add margin top for spacing */
+}
