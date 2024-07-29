@@ -17,14 +17,6 @@ CSS: For styling
 HTTP: Handling requests and responses
 Eclipse IDE: Development environment
 
-Installation
-Clone the repository:
-
-bash
-Copy code
-git clone https://github.com/ProgessBasi/bloodline-management-system.git
-cd bloodline-management-system
-
 Setup Database:
 
 1) Create a MySQL database.
