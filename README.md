@@ -22,7 +22,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/yourusername/bloodline-management-system.git
+git clone https://github.com/ProgessBasi/bloodline-management-system.git
 cd bloodline-management-system
 
 Setup Database:
@@ -54,10 +54,6 @@ Implement session management for user-specific interactions.
 Contributing:
 
 Contributions are welcome! Please fork this repository and submit pull requests with your changes.
-
-License:
-
-This project is licensed under the MIT License.
 
 Acknowledgments:
 
